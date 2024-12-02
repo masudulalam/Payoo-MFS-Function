@@ -33,7 +33,7 @@
                     <!-- Features End -->
                     <div class="divider"></div>
                     <!-- Add Money Form Start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -55,12 +55,13 @@
                         </form>
                     </div>
                     <!-- Add Money Form End -->
+
                     <!-- Cash Out Form Start -->
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Cash Out</span>
+                                    <span class="label-text">Cash Out Amount</span>
                                 </label>
                                 <input id="input-cash-out" type="text" placeholder="Cash Out Money Amount"
                                     class="input input-bordered" required />
@@ -69,7 +70,7 @@
                                 <label class="label">
                                     <span class="label-text">Pin Number</span>
                                 </label>
-                                <input id="input-pin-number" type="password" placeholder="Add Pin Number"
+                                <input id="cash-out-pin" type="password" placeholder="Add Pin Number"
                                     class="input input-bordered" required />
                             </div>
                             <div class="form-control mt-6">
@@ -86,6 +87,7 @@
 
     <script src="/js/utilities2.js"></script>
     <script src="/js/addMoney2.js"></script>
+    <script src="/js/cashOut.js"></script>
 </body>
 
 </html>
