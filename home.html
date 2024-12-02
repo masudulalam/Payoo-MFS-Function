@@ -27,13 +27,14 @@
                     <div class="divider"></div>
                     <!-- Features Start -->
                     <div>
-                        <button class="btn btn-lg">Add Money</button>
-                        <button class="btn btn-lg">Cash Out</button>
+                        <button id="show-add-money-form" class="btn btn-lg m-5">Add Money</button>
+                        <button id="show-cash-out-form" class="btn btn-lg">Cash Out</button>
+                        <button id="show-transaction-section" class="btn btn-lg mx-5">Transactions</button>
                     </div>
                     <!-- Features End -->
                     <div class="divider"></div>
                     <!-- Add Money Form Start -->
-                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -57,7 +58,7 @@
                     <!-- Add Money Form End -->
 
                     <!-- Cash Out Form Start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -79,6 +80,12 @@
                         </form>
                     </div>
                     <!-- Cash Out Form End -->
+
+                    <!-- Transaction Start -->
+                     <div id="transaction-section" class="hidden">
+                        <h2 class="text-4xl text-center">Transaction History</h2>
+                     </div>
+                    <!-- Transaction End -->
                 </div>
             </div>
         </div>
@@ -88,6 +95,7 @@
     <script src="/js/utilities2.js"></script>
     <script src="/js/addMoney2.js"></script>
     <script src="/js/cashOut.js"></script>
+    <script src="/js/features.js"></script>
 </body>
 
 </html>
