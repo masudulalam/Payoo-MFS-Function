@@ -21,7 +21,7 @@
                     <div class="stats shadow">
                         <div class="stat">
                             <div class="stat-title">Available Balance</div>
-                            <div class="stat-value">10000</div>
+                            <div id="account-balance" class="stat-value">10000</div>
                         </div>
                     </div>
                     <div class="divider"></div>
@@ -39,13 +39,15 @@
                                 <label class="label">
                                     <span class="label-text">Add Money</span>
                                 </label>
-                                <input type="text" placeholder="Add Money Amount" class="input input-bordered" required />
+                                <input id="input-add-money" type="text" placeholder="Add Money Amount"
+                                    class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Pin Number</span>
                                 </label>
-                                <input type="password" placeholder="Add Pin Number" class="input input-bordered" required />
+                                <input id="input-pin-number" type="password" placeholder="Add Pin Number"
+                                    class="input input-bordered" required />
                             </div>
                             <div class="form-control mt-6">
                                 <button id="btn-add-money" class="btn btn-primary">Add Money</button>
@@ -53,14 +55,15 @@
                         </form>
                     </div>
                     <!-- Add Money Form End -->
+                    
                 </div>
             </div>
         </div>
     </main>
     <footer></footer>
 
-    <script src="/js/utilities.js"></script>
-    <script src="/js/addMoney.js"></script>
+    <script src="/js/utilities2.js"></script>
+    <script src="/js/addMoney2.js"></script>
 </body>
 
 </html>
