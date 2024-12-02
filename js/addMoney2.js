@@ -8,6 +8,12 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
         const balance = getTextFieldValueById ('account-balance');
         const newBalance = balance + addMoney;
         document.getElementById('account-balance').innerText = newBalance;
+
+        // add to transaction history
+        const para = document.createElement('p');
+        para.innerText = `Added: ${addMoney} TK. New Balance: ${newBalance} TK.`;
+        document.getElementById('transaction-container').appendChild(para);
+
     } else {
         alert ('Invalid Pin Number! Please Try Again.')
     }
