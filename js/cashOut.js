@@ -12,6 +12,11 @@ document.getElementById('btn-cash-out').addEventListener('click', function (even
     
     if (pinNumber === 1234) {
         const balance = getTextFieldValueById('account-balance');
+        // Another Validation Cash Out
+        if(cashOut > balance) {
+            alert('The Money is Not Available.');
+            return;
+        }
         const newBalance = balance - cashOut;
 
         document.getElementById('account-balance').innerText = newBalance;
