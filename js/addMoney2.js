@@ -4,6 +4,12 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
     const addMoney = getInputFieldValueById ('input-add-money');
     const pinNumber = getInputFieldValueById ('input-pin-number');
 
+    //  Validation addMoney
+    if(isNaN(addMoney)) {
+        alert('Invalid Number! Please Enter The Right Number.');
+        return;
+    }
+
     if (pinNumber === 1234) {
         const balance = getTextFieldValueById ('account-balance');
         const newBalance = balance + addMoney;
